@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         initFruits()
-
         child1.setOnClickListener {
             val intent = Intent(this, ChildActivity1::class.java)
             intent.putExtra("data", fruitList)
@@ -28,12 +27,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initFruits() {
-        fruitList.add(Gif("test1", R.drawable.test1))
-        fruitList.add(Gif("test2", R.drawable.test2))
-        fruitList.add(Gif("test3", R.drawable.test3))
-        fruitList.add(Gif("test4", R.drawable.test4))
-        fruitList.add(Gif("test5", R.drawable.test5))
-        fruitList.add(Gif("test6", R.drawable.test6))
+        repeat(3) {
+            fruitList.add(Gif("test1", R.drawable.test1))
+            fruitList.add(Gif("test2", R.drawable.test2))
+            fruitList.add(Gif("test3", R.drawable.test3))
+            fruitList.add(Gif("test4", R.drawable.test4))
+            fruitList.add(Gif("test5", R.drawable.test5))
+            fruitList.add(Gif("test6", R.drawable.test6))
+        }
     }
 
     public fun getFruitList() = fruitList
