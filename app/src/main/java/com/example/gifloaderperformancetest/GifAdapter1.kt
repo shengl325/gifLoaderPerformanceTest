@@ -10,14 +10,14 @@ class GifAdapter1(val gifList: List<Gif>, val activity: ChildActivity1) : Recycl
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.gif_item_1, parent, false)
-        return setViewHolder(ViewHolder(view), gifList)
+        return setViewHolder(ViewHolder(view), gifList, activity)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val fruit = gifList[position]
-        holder.gifName.text = fruit.name
+        val gif = gifList[position]
+        holder.gifName.text = gif.name
         Glide.with(holder.itemView.context)
-            .load(fruit.gifId)
+            .load(gif.gifId)
             .into(holder.gif)
     }
 
