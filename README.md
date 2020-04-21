@@ -1,0 +1,2 @@
+# gifLoaderPerformanceTest
+测试两种动图加载方式的内存性能
