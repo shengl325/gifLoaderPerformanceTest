@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="horizontal">
 
-    <Button
+    <at.markushi.ui.CircleButton
         android:id="@+id/child1"
-        android:background="@"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="click to first child"/>
+        android:layout_width="64dip"
+        android:layout_height="64dip"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:cb_color="#99CC00"
+        app:cb_pressedRingWidth="8dip"/>
 
-    <Button
+    <at.markushi.ui.CircleButton
         android:id="@+id/child2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="click to second child" />
+        android:layout_width="64dip"
+        android:layout_height="64dip"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:cb_color="#99CC00"
+        app:cb_pressedRingWidth="8dip" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

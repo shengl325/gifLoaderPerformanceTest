@@ -1,5 +1,6 @@
 package com.example.gifloaderperformancetest
 
+import android.animation.AnimatorInflater
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -24,6 +25,12 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("data", fruitList)
             startActivity(intent)
         }
+        val animator1 = AnimatorInflater.loadAnimator(this, R.animator.breath)
+        val animator2 = AnimatorInflater.loadAnimator(this, R.animator.breath)
+        animator1.setTarget(child1)
+        animator2.setTarget(child2)
+        animator1.start()
+        animator2.start()
     }
 
     private fun initFruits() {

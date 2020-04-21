@@ -1,11 +1,9 @@
 package com.example.gifloaderperformancetest
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import kotlinx.android.synthetic.main.activity_child.*
 
 class GifAdapter1(val gifList: List<Gif>, val activity: ChildActivity1) : RecyclerView.Adapter<ViewHolder>() {
 
