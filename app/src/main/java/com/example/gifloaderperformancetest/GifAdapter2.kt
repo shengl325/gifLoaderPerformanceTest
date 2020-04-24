@@ -5,7 +5,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
-class GifAdapter2(val gifList: List<Gif>, val activity: ChildActivity2) : RecyclerView.Adapter<ViewHolder>() {
+class GifAdapter2(val gifList: List<Gif>, val activity: ChildActivity2) :
+    RecyclerView.Adapter<ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)

@@ -4,4 +4,4 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-class Gif(val name: String, val gifId: Int): Parcelable
+class Gif(val name: String, val gifId: String) : Parcelable

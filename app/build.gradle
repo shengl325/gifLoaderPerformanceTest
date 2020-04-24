@@ -38,7 +38,8 @@ dependencies {
     implementation 'jp.wasabeef:recyclerview-animators:2.2.7'
     implementation 'com.github.markushi:circlebutton:1.1'
     implementation 'com.google.android.material:material:1.2.0-alpha06'
-
+    implementation 'com.squareup.retrofit2:retrofit:2.6.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.1'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'

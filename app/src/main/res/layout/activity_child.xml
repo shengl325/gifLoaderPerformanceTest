@@ -1,20 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/bigGif"
+        android:background="#000000"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"/>
+        android:layout_weight="10.7"/>
 
-    <fragment
-        android:id="@+id/gifFragment"
-        android:name="com.example.gifloaderperformancetest.GifFragment1"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:background="#282828"
+        app:tabTextColor="#ffffff"
+        app:tabIndicatorColor="@android:color/white"
+        app:tabIndicatorFullWidth="false"
+        app:tabGravity="fill"
+        app:tabMode="scrollable" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5" />
 
 </LinearLayout>
